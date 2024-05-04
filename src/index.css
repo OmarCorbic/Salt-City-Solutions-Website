@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  box-sizing: border-box;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  scroll-behavior: smooth;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b3749; /* Set the color of the scrollbar handle */
+  border-radius: 3px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8; /* Change the color of the scrollbar handle on hover */
+}
+
+.window {
+  -webkit-mask: radial-gradient(circle 60px, #0000 98%, #fff);
+  mask: radial-gradient(circle 60px, #0000 98%, #fff);
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  transform: translateX(-100%) rotate(45deg);
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.btn:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
