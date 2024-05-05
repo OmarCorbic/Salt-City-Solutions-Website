@@ -39,6 +39,7 @@ const Projects = () => {
       title: "A-FARM",
       description: t("afarmText"),
       technologies: ["NextJS", "tailwind"],
+      liveLink: "https://afarm-biljoteka.com/",
     },
     {
       id: 1,
@@ -50,6 +51,7 @@ const Projects = () => {
       title: "Tuzla Taxi",
       description: t("tuzlaTaxiText"),
       technologies: ["tailwind", "react", "html", "css"],
+      liveLink: "https://tuzlataxi.com/",
     },
   ];
 

@@ -97,10 +97,10 @@ const Pricing = () => {
               {t("pricingCardOneTitleTwo")}
             </h3>
             <p>{t("pricingCardOneText")}</p>
-            <div className="mt-auto">
+            {/* <div className="mt-auto">
               <p className="text-xl font-bold ">{t("pricingCardOnePrice")}</p>
               <p className="text-xs">{t("pricingCardOnePriceSubtext")}</p>
-            </div>
+            </div> */}
           </div>
           <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
             <div className="flex flex-row items-center gap-2">
@@ -186,10 +186,10 @@ const Pricing = () => {
               </span>{" "}
               {t("pricingCardTwoTextFour")}
             </p>
-            <div className="mt-auto">
+            {/* <div className="mt-auto">
               <p className="text-xl font-bold ">{t("pricingCardTwoPrice")} </p>
               <p className="text-xs">{t("pricingCardTwoSubtext")} </p>
-            </div>
+            </div> */}
           </div>
           <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
             <div className="flex flex-row items-center gap-2">
@@ -253,12 +253,12 @@ const Pricing = () => {
               {t("pricingCardThreeTitleTwo")}
             </h3>
             <p>{t("pricingCardThreeText")}</p>
-            <div className="mt-auto">
+            {/* <div className="mt-auto">
               <p className="text-xl font-bold ">
                 {" "}
                 {t("pricingCardThreePrice")}
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
             <div className="flex flex-row items-center gap-2">

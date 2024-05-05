@@ -34,7 +34,7 @@ const SingleProject = ({ project }) => {
         </p>
         <div className="h-10 border flex items-center justify-center dark:border bg-[#ebf7f6] dark:bg-transparent dark:border-[#0b091a]">
           <a
-            href="#"
+            href={project?.liveLink}
             target="_blank"
             className="border-2 border-darkAccent rounded-full flex items-center justify-center h-full px-5 hover:bg-darkAccent duration-150"
           >

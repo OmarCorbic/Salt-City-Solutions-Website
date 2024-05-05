@@ -92,3 +92,17 @@
 .animate-right {
   animation: slideInFromLeft 1s forwards;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* Your CSS styles for screens between 600px and 800px */
+  /* For example, you can target specific elements like this */
+
+  #navListContainer {
+    font-size: 12px;
+  }
+
+  .small-gap {
+    display: flex;
+    gap: 2;
+  }
+}
