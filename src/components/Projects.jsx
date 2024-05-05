@@ -6,8 +6,10 @@ import LakeSvg from "./LakeSvg";
 import { afarmImages } from "../assets/projectImages";
 import { tuzlaTaxiImages } from "../assets/projectImages";
 import { useTheme } from "../hooks/useTheme";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation("translation");
   const { darkMode } = useTheme();
   const [showSingleProject, setShowSingleProject] = useState(false);
   const [projectIndex, setProjectIndex] = useState(0);
@@ -25,9 +27,8 @@ const Projects = () => {
         }),
       ],
       title: "A-FARM",
-      description:
-        "Developed a comprehensive Next.js e-commerce site for a herbal pharmacy. The site features a wide range of herbal products categorized by various health concerns, enabling customers to easily find natural remedies for their needs. Leveraged Next.js for a smooth and dynamic user experience.",
-      technologies: ["react", "express", "nodejs", "mongodb"],
+      description: t("afarmText"),
+      technologies: ["NextJS", "tailwind"],
     },
     {
       id: 1,
@@ -37,8 +38,7 @@ const Projects = () => {
         }),
       ],
       title: "Tuzla Taxi",
-      description:
-        "A client project I developed for a local taxi company in Tuzla. This website enables customers to conveniently book taxis through a user-friendly form. As the developer, I optimized the site for a seamless booking experience and enhanced the client's online presence.",
+      description: t("tuzlaTaxiText"),
       technologies: ["tailwind", "react", "html", "css"],
     },
   ];
@@ -58,17 +58,12 @@ const Projects = () => {
           id="projects-heading"
           className="font-black text-xl sm:text-2xl md:text-3xl"
         >
-          OUR{" "}
+          {t("projectsTitleOne")}{" "}
           <span className="dark:text-darkAccent text-lightAccent">
-            PROJECTS
+            {t("projectsTitleTwo")}
           </span>
         </h2>
-        <p className=" w-full max-w-[600px] px-5">
-          We present you a collection of our latest web development projects.
-          From dynamic e-commerce platforms to sleek corporate websites, our
-          projects demonstrate the fusion of design, functionality, and user
-          experience.
-        </p>
+        <p className=" w-full max-w-[600px] px-5">{t("projectsText")}</p>
       </div>
       <div className="w-full justify-center  flex flex-wrap gap-5 ">
         {showSingleProject && (

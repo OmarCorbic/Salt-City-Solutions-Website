@@ -1,8 +1,11 @@
 import React from "react";
 import Gallery from "./Gallery";
 import TechnologyIcon from "./TechnologyIcon";
+import { useTranslation } from "react-i18next";
 
 const SingleProject = ({ project }) => {
+  const { t } = useTranslation("translation");
+
   return (
     <div className="flex  gap-5 h-full flex-col md:flex-row p-5 ">
       <div className="flex flex-col w-full md:w-1/2  gap-5">
@@ -35,7 +38,7 @@ const SingleProject = ({ project }) => {
             target="_blank"
             className="border-2 border-darkAccent rounded-full flex items-center justify-center h-full px-5 hover:bg-darkAccent duration-150"
           >
-            View Live
+            {t("singleProjectBtnText")}
           </a>
         </div>
       </div>

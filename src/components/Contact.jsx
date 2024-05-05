@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { BiMessage } from "react-icons/bi";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { GrContactInfo } from "react-icons/gr";
-
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import FrameSvg from "./FrameSvg";
 import { useTheme } from "../hooks/useTheme";
 
 const Contact = () => {
+  const { t } = useTranslation("translation");
   const { darkMode } = useTheme();
   const [success, setSuccess] = useState(false);
   const [formData, setFormData] = useState({
@@ -35,16 +36,16 @@ const Contact = () => {
 
     const errors = { firstName: "", lastName: "", email: "", message: "" };
     if (!firstName) {
-      errors.firstName = "First name is required";
+      errors.firstName = t("firstNameError");
     }
     if (!lastName) {
-      errors.lastName = "Last name is required";
+      errors.lastName = t("lastNameError");
     }
     if (!email) {
-      errors.email = "Email is required";
+      errors.email = t("emailError");
     }
     if (!message) {
-      errors.message = "Message is required";
+      errors.message = t("messageError");
     }
 
     if (errors.firstName || errors.lastName || errors.email || errors.message) {
@@ -92,13 +93,12 @@ const Contact = () => {
           id="contact-heading"
           className="font-black text-xl sm:text-2xl md:text-3xl"
         >
-          <span className="dark:text-darkAccent text-lightAccent">GET IN</span>{" "}
-          TOUCH
+          <span className="dark:text-darkAccent text-lightAccent">
+            {t("contactTitleOne")}
+          </span>{" "}
+          {t("contactTitleTwo")}
         </h2>
-        <p className=" w-full max-w-[600px] px-5">
-          Partner with us to elevate your online presence and unlock the full
-          potential of your company's digital footprint
-        </p>
+        <p className=" w-full max-w-[600px] px-5">{t("contactText")}</p>
       </div>
       <div className="flex flex-col items-center justify-center w-full py-10 z-10">
         <form
@@ -111,12 +111,12 @@ const Contact = () => {
                 className="w-full text-base mb-2 flex items-center"
                 htmlFor="firstName"
               >
-                <span>First name</span>
+                <span>{t("contactNameLabel")}</span>
               </label>
               <input
                 onChange={handleInputChange}
                 value={formData.firstName}
-                placeholder="Your first name"
+                placeholder={t("contactNamePlaceholder")}
                 className="w-full block bg-gradient-to-br from-slate-600 to-slate-800 outline-white dark:outline-sky-400 shadow-md focus:outline focus:outline-2 p-2 rounded-md "
                 type="text"
                 name="firstName"
@@ -133,7 +133,7 @@ const Contact = () => {
                 className="w-full text-base mb-2 flex items-center justify-between"
                 htmlFor="lastName"
               >
-                <span>Last name</span>
+                <span>{t("contactLastNameLabel")}</span>
                 <span>
                   <GrContactInfo size={20} />
                 </span>
@@ -141,7 +141,7 @@ const Contact = () => {
               <input
                 onChange={handleInputChange}
                 value={formData.lastName}
-                placeholder="Your last name"
+                placeholder={t("contactLastNamePlaceholder")}
                 className="block w-full bg-gradient-to-br from-slate-600 to-slate-800 outline-white dark:outline-sky-400 shadow-md focus:outline focus:outline-2 p-2 rounded-md "
                 type="text"
                 name="lastName"
@@ -159,7 +159,7 @@ const Contact = () => {
               className=" text-base mb-2 flex items-center justify-between"
               htmlFor="email"
             >
-              <span>Your e-mail</span>
+              <span>{t("contactEmailLabel")}</span>
               <span>
                 <MdOutlineMailOutline size={20} />
               </span>
@@ -167,7 +167,7 @@ const Contact = () => {
             <input
               onChange={handleInputChange}
               value={formData.email}
-              placeholder="Your business/personal e-mail address"
+              placeholder={t("contactEmailPlaceholder")}
               className="block bg-gradient-to-br from-slate-600 to-slate-800 outline-white dark:outline-sky-400 shadow-md focus:outline focus:outline-2 p-2 rounded-md "
               type="email"
               name="email"
@@ -184,7 +184,7 @@ const Contact = () => {
               className=" text-base mb-2 flex items-center justify-between"
               htmlFor="message"
             >
-              <span> How can we help?</span>{" "}
+              <span>{t("contactMessageLabel")}</span>{" "}
               <span>
                 <BiMessage size={20} />
               </span>
@@ -192,7 +192,7 @@ const Contact = () => {
             <textarea
               onChange={handleInputChange}
               value={formData.message}
-              placeholder="Tell us your needs."
+              placeholder={t("contactMessagePlaceholder")}
               rows="8"
               className="block bg-gradient-to-br from-slate-600 to-slate-800 outline-white dark:outline-sky-400 shadow-md focus:outline focus:outline-2 p-2 rounded-md "
               name="message"
@@ -206,7 +206,7 @@ const Contact = () => {
           </div>
           {success && (
             <div className="text-green-500 text-center">
-              Message sent successfully!
+              {t("contactMsgSuccess")}
             </div>
           )}
           <div className="flex items-center justify-center">
@@ -222,7 +222,7 @@ const Contact = () => {
               className="btn border-2 bg-black font-bold rounded-full px-14 py-2 text-base"
               type="submit"
             >
-              Send
+              {t("contactBtnText")}
             </button>
           </div>
         </form>

@@ -3,9 +3,11 @@ import { FiMenu } from "react-icons/fi";
 import { useTheme } from "../hooks/useTheme";
 import logo from "../assets/logo.png";
 import logoLight from "../assets/logoLight.png";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const { toggleDark } = useTheme();
+  const { t } = useTranslation("translation");
   const [showLinks, setShowLinks] = useState(false);
 
   return (
@@ -34,16 +36,16 @@ const Navbar = () => {
         }  gap-2 absolute items-center text-base bg-[#020014] overflow-hidden top-[70%] right-0 sm:static flex flex-col sm:flex-row sm:bg-transparent sm:h-auto sm:gap-5`}
       >
         <li>
-          <Link to="about" text="About us" />
+          <Link to="about" text={t("navItemOne")} />
         </li>
         <li>
-          <Link to="pricing" text="Pricing" />
+          <Link to="pricing" text={t("navItemTwo")} />
         </li>
         <li>
-          <Link to="projects" text="Projects" />
+          <Link to="projects" text={t("navItemThree")} />
         </li>
         <li>
-          <Link to="contact " text="Contact  " />
+          <Link to="contact " text={t("navItemFour")} />
         </li>
         <li>
           <button

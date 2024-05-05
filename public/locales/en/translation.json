@@ -1,0 +1,104 @@
+{
+  "navItemOne": "About us",
+  "navItemTwo": "Pricing",
+  "navItemThree": "Projects",
+  "navItemFour": "Contact",
+
+  "heroTitle": "Web solutions for your business",
+  "heroText": "We craft optimal solutions for website design, responsiveness and performance",
+  "heroBtnText": "Contact Us",
+
+  "aboutTitleOne": "WHAT",
+  "aboutTitleTwo": "DO WE OFFER",
+  "aboutText": "Our expertise lies in crafting custom web designs and development solutions tailored for small businesses across the United States. We meticulously hand-code every aspect to guarantee optimal performance, ultimately driving increased traffic and revenue to your website.",
+
+  "aboutCardOneTitle": "Full responsive design",
+  "aboutCardOneText": "Your website is optimized to perfectly fit screens of all sizes, including those of mobile devices, tablets, and desktop computers.",
+
+  "aboutCardTwoTitle": "Optimization",
+  "aboutCardTwoText": "We optimize your website to perform its best in search engines. It helps users find your website easier.",
+
+  "aboutCardThreeTitle": "Back-end development",
+  "aboutCardThreeText": "We develop web applications with back-end support, like e-commerce websites, rest API-s, and even simple online games.",
+
+  "pricingContactBtnText": "Contact us",
+
+  "pricingTitleOne": "OUR",
+  "pricingTitleTwo": "PRICING PLAN",
+  "pricingNote": "NOTE: Any additional feature, page and product is charged more",
+  "pricingBtnText": "Contact",
+
+  "pricingCardOneTitleOne": "Standard",
+  "pricingCardOneTitleTwo": "package",
+  "pricingCardOneText": "We provide you with a standard 5-page website",
+  "pricingCardOnePrice": "$70 a month",
+  "pricingCardOnePriceSubtext": "min 12 month contract",
+
+  "pricingCardOneFirstItem": "24/7 support",
+  "pricingCardOneSecondItem": "Modern design",
+  "pricingCardOneThirdItem": "Unlimited design customatization",
+  "pricingCardOneFourthItem": "Design & development from scratch",
+  "pricingCardOneFifthItem": "Free SEO Marketing",
+  "pricingCardOneSixthItem": "Hosting & maintenance",
+
+  "pricingCardTwoTitleOne": "E-commerce ",
+  "pricingCardTwoTitleTwo": "package",
+
+  "pricingCardTwoTextOne": "You get the",
+  "pricingCardTwoTextTwo": "standard package",
+  "pricingCardTwoTextThree": "online shop",
+  "pricingCardTwoTextFour": "with up to 200 products",
+  "pricingCardTwoPrice": "$100 a month",
+  "pricingCardTwoSubtext": "min 12 month contract",
+
+  "pricingCardTwoFirstItem": "Filters & categories",
+  "pricingCardTwoSecondItem": "Product search feature",
+  "pricingCardTwoThirdItem": "Admin dashboard",
+  "pricingCardTwoFourthItem": "Up to 200 products",
+
+  "pricingCardThreeTitleOne": "Logo",
+  "pricingCardThreeTitleTwo": "design & branding",
+
+  "pricingCardThreeText": "We design custom graphic logos and social media posts",
+  "pricingCardThreePrice": "$200",
+
+  "pricingCardThreeFirstItem": "We customize until you are satisfied",
+  "pricingCardThreeSecondItem": "Re-design of previous logo",
+  "pricingCardThreeThirdItem": "New design from scratch",
+
+  "projectsTitleOne": "OUR",
+  "projectsTitleTwo": "PROJECTS",
+  "projectsText": "We present you a collection of our latest web development projects. From dynamic e-commerce platforms to sleek corporate websites, our projects demonstrate the fusion of design, functionality, and user experience.",
+
+  "contactTitleOne": "GET IN",
+  "contactTitleTwo": "TOUCH",
+  "contactText": "Partner with us to elevate your online presence and unlock the full potential of your company's digital footprint",
+
+  "contactNameLabel": "First name",
+  "contactNamePlaceholder": "Your first name",
+
+  "contactLastNameLabel": "Last name",
+  "contactLastNamePlaceholder": "Your last name",
+
+  "contactEmailLabel": "Your e-mail",
+  "contactEmailPlaceholder": "Your business/personal e-mail address",
+
+  "contactMessageLabel": "How can we help?",
+  "contactMessagePlaceholder": "Tell us your needs.",
+
+  "contactBtnText": "Send",
+
+  "firstNameError": "First name is required",
+  "lastNameError": "Last name is required",
+  "emailError": "Email is required",
+  "messageError": "Message is required",
+
+  "contactMsgSuccess": "Message sent successfully!",
+
+  "singleProjectBtnText": "View Live",
+  "singleProjectCloseBtnText": "Close",
+
+  "tuzlaTaxiText": " This client project for a local taxi company in Tuzla delivers seamless booking experiences. Our website allows customers to conveniently book taxis through a user-friendly form. Leveraging our expertise, we optimized the site to ensure a smooth booking process and significantly enhanced the client's online presence.",
+
+  "afarmText": "We Developed a comprehensive Next.js e-commerce site for a herbal pharmacy. The site features a wide range of herbal products categorized by various health concerns, enabling customers to easily find natural remedies for their needs. Leveraged Next.js for a smooth and dynamic user experience."
+}

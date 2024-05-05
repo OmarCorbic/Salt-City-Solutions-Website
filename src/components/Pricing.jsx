@@ -2,9 +2,12 @@ import React from "react";
 import { TfiCheckBox } from "react-icons/tfi";
 import { useTheme } from "../hooks/useTheme";
 import LakeSvg from "./LakeSvg";
+import { useTranslation } from "react-i18next";
 
 const Pricing = () => {
   const { darkMode } = useTheme();
+  const { t } = useTranslation("translation");
+
   return (
     <section
       id="pricing"
@@ -20,14 +23,12 @@ const Pricing = () => {
           id="pricing-heading"
           className="font-black text-xl sm:text-2xl md:text-3xl"
         >
-          OUR{" "}
+          {t("pricingTitleOne")}{" "}
           <span className="dark:dark:text-darkAccent  text-lightAccent">
-            PRICING PLAN
+            {t("pricingTitleTwo")}
           </span>
         </h2>
-        <p className=" w-full max-w-[600px] px-5">
-          NOTE : Any additional feature, page and product is charged more
-        </p>
+        <p className=" w-full max-w-[600px] px-5">{t("pricingNote")}</p>
       </div>
 
       <div className="flex flex-col lg:flex-row z-10  lg:justify-center justify-between gap-5">
@@ -45,14 +46,14 @@ const Pricing = () => {
               className="text-xl font-extrabold"
             >
               <span className="dark:text-darkAccent text-lightAccent">
-                Standard
+                {t("pricingCardOneTitleOne")}
               </span>{" "}
-              package
+              {t("pricingCardOneTitleTwo")}
             </h3>
-            <p>We provide you with a standard 5-page website</p>
+            <p>{t("pricingCardOneText")}</p>
             <div className="mt-auto">
-              <p className="text-xl font-bold ">$70 a month </p>
-              <p className="text-xs">min 12 month contract </p>
+              <p className="text-xl font-bold ">{t("pricingCardOnePrice")}</p>
+              <p className="text-xs">{t("pricingCardOnePriceSubtext")}</p>
             </div>
           </div>
           <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
@@ -60,37 +61,37 @@ const Pricing = () => {
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>24/7 support</p>
+              <p>{t("pricingCardOneFirstItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Modern design</p>
+              <p>{t("pricingCardOneSecondItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Unlimited design customatization</p>
+              <p>{t("pricingCardOneThirdItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Design & development from scratch</p>
+              <p>{t("pricingCardOneFourthItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Free SEO Marketing</p>
+              <p>{t("pricingCardOneFifthItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Hosting & maintenance</p>
+              <p>{t("pricingCardOneSixthItem")}</p>
             </div>
           </div>
           <div className="flex items-center justify-center">
@@ -100,7 +101,7 @@ const Pricing = () => {
               aria-label="Scrolls to contact region"
               className="btn text-white flex items-center justify-center py-2 px-5 bg-lightAccent dark:bg-darkAccent hover:scale-105 rounded-full border-2 boder-white w-40 font-bold"
             >
-              Contact us
+              {t("pricingContactBtnText")}
             </a>
           </div>
         </article>
@@ -118,19 +119,24 @@ const Pricing = () => {
               className="text-xl font-extrabold"
             >
               <span className="dark:text-darkAccent text-lightAccent">
-                E-commerce
+                {t("pricingCardTwoTitleOne")}
               </span>{" "}
-              package
+              {t("pricingCardTwoTitleTwo")}
             </h3>
             <p>
-              You get the{" "}
-              <span className="font-extrabold">standard package</span> &{" "}
-              <span className="font-extrabold">online shop</span> with up to 200
-              products
+              {t("pricingCardTwoTextOne")}{" "}
+              <span className="font-extrabold">
+                {t("pricingCardTwoTextTwo")}
+              </span>{" "}
+              &{" "}
+              <span className="font-extrabold">
+                {t("pricingCardTwoTextThree")}
+              </span>{" "}
+              {t("pricingCardTwoTextFour")}
             </p>
             <div className="mt-auto">
-              <p className="text-xl font-bold ">$100 a month </p>
-              <p className="text-xs">min 12 month contract </p>
+              <p className="text-xl font-bold ">{t("pricingCardTwoPrice")} </p>
+              <p className="text-xs">{t("pricingCardTwoSubtext")} </p>
             </div>
           </div>
           <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
@@ -138,25 +144,25 @@ const Pricing = () => {
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Filters & categories</p>
+              <p>{t("pricingCardTwoFirstItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Product search feature</p>
+              <p>{t("pricingCardTwoSecondItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Admin dashboard</p>
+              <p>{t("pricingCardTwoThirdItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Up to 200 products</p>
+              <p>{t("pricingCardTwoFourthItem")}</p>
             </div>
           </div>
           <div className="flex items-center justify-center">
@@ -166,7 +172,7 @@ const Pricing = () => {
               aria-label="Scrolls to contact region"
               className="flex items-center justify-center py-2 px-5 bg-lightAccent dark:bg-darkAccent hover:scale-105 btn text-white rounded-full border-2 boder-white w-40 font-bold"
             >
-              Contact us
+              {t("pricingContactBtnText")}
             </a>
           </div>
         </article>
@@ -184,13 +190,16 @@ const Pricing = () => {
               className="text-xl font-extrabold"
             >
               <span className="dark:text-darkAccent text-lightAccent">
-                Logo
+                {t("pricingCardThreeTitleOne")}
               </span>{" "}
-              design & branding
+              {t("pricingCardThreeTitleTwo")}
             </h3>
-            <p>We design custom graphic logos and social media posts</p>
+            <p>{t("pricingCardThreeText")}</p>
             <div className="mt-auto">
-              <p className="text-xl font-bold ">$200</p>
+              <p className="text-xl font-bold ">
+                {" "}
+                {t("pricingCardThreePrice")}
+              </p>
             </div>
           </div>
           <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
@@ -198,19 +207,19 @@ const Pricing = () => {
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>We customize until you are satisfied</p>
+              <p>{t("pricingCardThreeFirstItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>Re-design of previous logo</p>
+              <p>{t("pricingCardThreeSecondItem")}</p>
             </div>
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
               </div>
-              <p>New design from scratch</p>
+              <p>{t("pricingCardThreeThirdItem")}</p>
             </div>
           </div>
           <div className="flex items-center justify-center">
@@ -220,7 +229,7 @@ const Pricing = () => {
               aria-label="Scrolls to contact region"
               className="flex items-center justify-center py-2 px-5 bg-lightAccent dark:bg-darkAccent hover:scale-105 btn text-white rounded-full border-2 boder-white w-40 font-bold"
             >
-              Contact us
+              {t("pricingContactBtnText")}
             </a>
           </div>
         </article>

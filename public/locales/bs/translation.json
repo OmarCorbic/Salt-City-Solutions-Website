@@ -1,0 +1,104 @@
+{
+  "navItemOne": "O nama",
+  "navItemTwo": "Cjenovnik",
+  "navItemThree": "Projekti",
+  "navItemFour": "Kontakt",
+
+  "heroTitle": "Web rješenja za vaš biznis",
+  "heroText": "Mi izrađujemo optimalna rješenja za dizajn web stranica, responsivnost i performanse",
+  "heroBtnText": "Kontakt",
+
+  "aboutTitleOne": "ŠTA",
+  "aboutTitleTwo": "NUDIMO",
+  "aboutText": "Naše stručnosti leže u izradi prilagođenih web dizajna i razvojnih rješenja. Pažljivo ručno kodiramo svaki aspekt kako bismo garantovali optimalnu performansu, što na kraju dovodi do povećanja prometa i prihoda na vašem sajtu.",
+
+  "aboutCardOneTitle": "Potpuno responsivan dizajn",
+  "aboutCardOneText": "Vaš sajt optimiziramo da savršeno odgovara ekranima svih veličina, a to uključuje mobilne uređaje, tablete i desktop računare.",
+
+  "aboutCardTwoTitle": "Optimizacija",
+  "aboutCardTwoText": "Optimiziramo vaš sajt kako bi pružio najbolje performanse u pretraživačima. To pomaže korisnicima da lakše pronađu vaš sajt.",
+
+  "aboutCardThreeTitle": "Back-end development",
+  "aboutCardThreeText": "Razvijamo web aplikacije s podrškom pozadinskog dijela, poput e-trgovinskih sajtova, rest API-ja, pa čak i jednostavnih online igara.",
+
+  "pricingContactBtnText": "Kontakt",
+
+  "pricingTitleOne": "NAŠ",
+  "pricingTitleTwo": "CJENOVNIK",
+  "pricingNote": "NAPOMENA: Svaka dodatna funkcija, stranica ili proizvod se dodatno naplaćuju.",
+  "pricingBtnText": "Kontakt",
+
+  "pricingCardOneTitleOne": "Standardni",
+  "pricingCardOneTitleTwo": "paket",
+  "pricingCardOneText": "Nudimo vam standardnu web stranicu sa 5 stranica",
+  "pricingCardOnePrice": "70KM mjesečno",
+  "pricingCardOnePriceSubtext": "min 12-mjesečni ugovor",
+
+  "pricingCardOneFirstItem": "Podrška 24/7",
+  "pricingCardOneSecondItem": "Moderan dizajn",
+  "pricingCardOneThirdItem": "Neograničeno prilagođavanje dizajna",
+  "pricingCardOneFourthItem": "Dizajn i razvoj od nule",
+  "pricingCardOneFifthItem": "Besplatni SEO marketing",
+  "pricingCardOneSixthItem": "Hosting i održavanje",
+
+  "pricingCardTwoTitleOne": "E-commerce",
+  "pricingCardTwoTitleTwo": "paket",
+
+  "pricingCardTwoTextOne": "Dobijate",
+  "pricingCardTwoTextTwo": "standardni paket",
+  "pricingCardTwoTextThree": "online prodavnicu",
+  "pricingCardTwoTextFour": "do 200 proizvoda",
+  "pricingCardTwoPrice": "100KM mjesečno",
+  "pricingCardTwoSubtext": "min 12-mjesečni ugovor",
+
+  "pricingCardTwoFirstItem": "Filteri & kategorije",
+  "pricingCardTwoSecondItem": "Funkcija pretrage proizvoda",
+  "pricingCardTwoThirdItem": "Admin panel",
+  "pricingCardTwoFourthItem": "Do 200 proizvoda",
+
+  "pricingCardThreeTitleOne": "Dizajn",
+  "pricingCardThreeTitleTwo": "logotipa & brendiranje",
+
+  "pricingCardThreeText": "Dizajniramo prilagođene grafičke logotipe i objave na društvenim mrežama",
+  "pricingCardThreePrice": "200KM",
+
+  "pricingCardThreeFirstItem": "Prilagođavamo dok ne budete zadovoljni",
+  "pricingCardThreeSecondItem": "Redizajn prethodnog logotipa",
+  "pricingCardThreeThirdItem": "Novi dizajn od nule",
+
+  "projectsTitleOne": "NAŠI",
+  "projectsTitleTwo": "PROJEKTI",
+  "projectsText": "Predstavljamo vam kolekciju naših najnovijih web razvojnih projekata. Od dinamičnih e-trgovinskih platformi do modernih korporativnih sajtova, naši projekti demonstriraju spajanje dizajna, funkcionalnosti i korisničkog iskustva.",
+
+  "contactTitleOne": "KONTAKTIRAJTE",
+  "contactTitleTwo": "NAS",
+  "contactText": "Kontaktirajte nas kako biste unaprijedili svoju online prisutnost i otključali puni potencijal digitalnog otiska vaše kompanije.",
+
+  "contactNameLabel": "Vaše ime",
+  "contactNamePlaceholder": "Unesite vaše ime",
+
+  "contactLastNameLabel": "Vaše Prezime",
+  "contactLastNamePlaceholder": "Unesite vaše prezime",
+
+  "contactEmailLabel": "Vaša e-mail adresa",
+  "contactEmailPlaceholder": "Unesite vašu poslovnu/osobnu e-mail adresu",
+
+  "contactMessageLabel": "Kako vam možemo pomoći?",
+  "contactMessagePlaceholder": "Recite nam svoje potrebe.",
+
+  "contactBtnText": "Pošalji",
+
+  "firstNameError": "Ime je obavezno",
+  "lastNameError": "Prezime je obavezno",
+  "emailError": "E-mail je obavezan",
+  "messageError": "Poruka je obavezna",
+
+  "contactMsgSuccess": "Poruka uspješno poslana!",
+
+  "singleProjectBtnText": "Pogledaj",
+  "singleProjectCloseBtnText": "Zatvori",
+
+  "tuzlaTaxiText": "Projekat za lokalnu taksi kompaniju u Tuzli pruža jednostavno iskustvo rezervacije. Naša web stranica omogućava korisnicima laku rezervaciju taksija putem prijateljskog obrasca. Koristeći naše znanje, optimizirali smo stranicu za jednostavni proces rezervacije i unaprijedili prisustvo klijenta na internetu.",
+
+  "afarmText": "Razvili smo Next.js e-trgovinsku stranicu za ljekarnu biljnih proizvoda. Platforma nudi širok izbor biljnih proizvoda razvrstanih po zdravstvenim problemima, omogućujući korisnicima jednostavno pronalaženje prirodnih lijekova. Iskoristili smo Next.js za fluidno i dinamično korisničko iskustvo."
+}

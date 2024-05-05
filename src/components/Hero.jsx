@@ -8,25 +8,26 @@ import handshake from "../assets/handshake.png";
 import clock from "../assets/clock.png";
 import cloud from "../assets/cloud.png";
 import { useTheme } from "../hooks/useTheme";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation("translation");
   const { darkMode } = useTheme();
   return (
     <section className="relative text-white h-screen bg-gradient-to-br dark:from-[#000218] dark:to-sky-950 from-sky-600 to-sky-300 overflow-hidden">
       <StarField />
       <div className=" pl-[8%] py-5 md:ml-[5%] lg:ml-20 absolute top-[20%] sm:top-[20%] flex flex-col z-[11] gap-5 sm:max-w-[45%]">
         <h1 className="text-2xl md:text-3xl lg:text-5xl font-black">
-          Web solutions for your business
+          {t("heroTitle")}
         </h1>
         <p className="text-xs md:text-lg font-normal max-w-[60%] sm:max-w-full">
-          We craft optimal solutions for website design, responsiveness and
-          performance
+          {t("heroText")}
         </p>
         <a
           href="#contact"
           className="dark:animate-flicker py-3 px-5 bg-lightAccent dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white w-32 font-bold"
         >
-          Contact us
+          {t("heroBtnText")}
         </a>
       </div>
       <div className="z-[2] absolute grid grid-rows-1 grid-cols-3 items-end -rotate-12 transform lg:bottom-10 lg:right-32 lg:h-72 lg:w-72 h-[60vw] w-60 sm:h-[60%] sm:w-72 bottom-0 right-0">

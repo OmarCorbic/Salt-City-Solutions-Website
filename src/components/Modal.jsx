@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Modal = ({ children, onClose }) => {
+  const { t } = useTranslation("translation");
   const closeModal = (e) => {
     if (
       e.target.id === "modal-background" ||
@@ -23,7 +25,7 @@ const Modal = ({ children, onClose }) => {
             id="modal-close-btn"
             className="border btn border-sky-400 rounded-full px-5"
           >
-            Close
+            {t("singleProjectCloseBtnText")}
           </button>
         </div>
       </div>
