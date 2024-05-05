@@ -8,7 +8,7 @@ export const useTheme = () => useContext(ThemeContext);
 
 // Custom hook to manage the theme state
 export const useThemeState = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleDark = () => {
     setDarkMode((prev) => !prev);

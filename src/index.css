@@ -57,3 +57,38 @@
 .btn:hover::before {
   transform: translateX(100%) rotate(45deg);
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.first-item-fade-in {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.second-item-fade-in {
+  opacity: 1;
+  transition: all 1.5s;
+}
+
+.third-item-fade-in {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.animate-right {
+  animation: slideInFromLeft 1s forwards;
+}

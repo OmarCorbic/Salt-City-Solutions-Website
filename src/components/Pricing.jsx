@@ -3,10 +3,44 @@ import { TfiCheckBox } from "react-icons/tfi";
 import { useTheme } from "../hooks/useTheme";
 import LakeSvg from "./LakeSvg";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
+import classNames from "classnames";
 
 const Pricing = () => {
   const { darkMode } = useTheme();
   const { t } = useTranslation("translation");
+
+  const {
+    ref: pricingTitleRef,
+    inView: pricingVisible,
+    pricingEntry,
+  } = useInView({
+    triggerOnce: true,
+  });
+
+  const {
+    ref: pricingCardRef,
+    inView: pricingCardVisible,
+    firstEntry,
+  } = useInView({
+    triggerOnce: true,
+  });
+
+  const {
+    ref: secondPricingCardRef,
+    inView: secondPricingCardVisible,
+    secondEntry,
+  } = useInView({
+    triggerOnce: true,
+  });
+
+  const {
+    ref: thirdPricingCardRef,
+    inView: thirdPricingCardVisible,
+    thirdEntry,
+  } = useInView({
+    triggerOnce: true,
+  });
 
   return (
     <section
@@ -20,8 +54,14 @@ const Pricing = () => {
       </div>
       <div className="flex flex-col z-10 gap-5 w-full items-center px-5">
         <h2
+          ref={pricingTitleRef}
           id="pricing-heading"
-          className="font-black text-xl sm:text-2xl md:text-3xl"
+          className={classNames(
+            "font-black text-xl sm:text-2xl md:text-3xl opacity-0",
+            {
+              "fade-in": pricingVisible,
+            }
+          )}
         >
           {t("pricingTitleOne")}{" "}
           <span className="dark:dark:text-darkAccent  text-lightAccent">
@@ -33,12 +73,18 @@ const Pricing = () => {
 
       <div className="flex flex-col lg:flex-row z-10  lg:justify-center justify-between gap-5">
         <article
+          ref={pricingCardRef}
           aria-labelledby="standard-package-heading"
           style={{
             boxShadow:
               "1px 1px 9px rgb(56 189 248), -1px -1px 9px rgb(56 189 248)",
           }}
-          className="flex flex-col justify-around border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3  p-5"
+          className={classNames(
+            "flex flex-col justify-around border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3  p-5 opacity-0",
+            {
+              "first-item-fade-in": pricingCardVisible,
+            }
+          )}
         >
           <div className="h-1/2 flex flex-col  gap-3">
             <h3
@@ -106,12 +152,18 @@ const Pricing = () => {
           </div>
         </article>
         <article
+          ref={secondPricingCardRef}
           aria-labelledby="ecommerce-package-heading"
           style={{
             boxShadow:
               "1px 1px 9px rgb(56 189 248), -1px -1px 9px rgb(56 189 248)",
           }}
-          className="flex flex-col border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3 p-5"
+          className={classNames(
+            "flex flex-col border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3 p-5 opacity-0",
+            {
+              "third-item-fade-in": secondPricingCardVisible,
+            }
+          )}
         >
           <div className="h-1/2 flex flex-col  gap-3">
             <h3
@@ -177,12 +229,18 @@ const Pricing = () => {
           </div>
         </article>
         <article
+          ref={thirdPricingCardRef}
           aria-labelledby="branding-package-heading"
           style={{
             boxShadow:
               "1px 1px 9px rgb(56 189 248), -1px -1px 9px rgb(56 189 248)",
           }}
-          className="flex flex-col border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0  m-5 lg:m-0 rounded-md gap-3 p-5"
+          className={classNames(
+            "flex flex-col border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0  m-5 lg:m-0 rounded-md gap-3 p-5 opacity-0",
+            {
+              "third-item-fade-in": thirdPricingCardVisible,
+            }
+          )}
         >
           <div className="h-1/2 flex flex-col gap-3">
             <h3

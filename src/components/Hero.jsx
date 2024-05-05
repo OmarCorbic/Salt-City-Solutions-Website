@@ -9,15 +9,35 @@ import clock from "../assets/clock.png";
 import cloud from "../assets/cloud.png";
 import { useTheme } from "../hooks/useTheme";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
+import classNames from "classnames";
 
 const Hero = () => {
   const { t } = useTranslation("translation");
   const { darkMode } = useTheme();
+  const {
+    ref: heroRef,
+    inView: heroTextVisible,
+    entry,
+  } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <section className="relative text-white h-screen bg-gradient-to-br dark:from-[#000218] dark:to-sky-950 from-sky-600 to-sky-300 overflow-hidden">
+    <section
+      ref={heroRef}
+      className="relative text-white h-screen bg-gradient-to-br dark:from-[#000218] dark:to-sky-950 from-sky-600 to-sky-300 overflow-hidden"
+    >
       <StarField />
       <div className=" pl-[8%] py-5 md:ml-[5%] lg:ml-20 absolute top-[20%] sm:top-[20%] flex flex-col z-[11] gap-5 sm:max-w-[45%]">
-        <h1 className="text-2xl md:text-3xl lg:text-5xl font-black">
+        <h1
+          className={classNames(
+            "text-2xl md:text-3xl lg:text-5xl xl:text-[3.7rem] font-black",
+            {
+              "animate-right": heroTextVisible,
+            }
+          )}
+        >
           {t("heroTitle")}
         </h1>
         <p className="text-xs md:text-lg font-normal max-w-[60%] sm:max-w-full">
@@ -25,7 +45,7 @@ const Hero = () => {
         </p>
         <a
           href="#contact"
-          className="dark:animate-flicker py-3 px-5 bg-lightAccent dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white w-32 font-bold"
+          className="dark:animate-flicker flex items-center justify-center py-3 px-5 bg-lightAccent dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white w-32 font-bold"
         >
           {t("heroBtnText")}
         </a>

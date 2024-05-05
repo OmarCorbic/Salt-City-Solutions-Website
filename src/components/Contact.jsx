@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import FrameSvg from "./FrameSvg";
 import { useTheme } from "../hooks/useTheme";
+import { useInView } from "react-intersection-observer";
+import classNames from "classnames";
 
 const Contact = () => {
   const { t } = useTranslation("translation");
@@ -22,6 +24,13 @@ const Contact = () => {
     lastName: "",
     email: "",
     message: "",
+  });
+  const {
+    ref: contactRef,
+    inView: contactVisible,
+    contactEntry,
+  } = useInView({
+    triggerOnce: true,
   });
 
   const handleInputChange = (e) => {
@@ -90,8 +99,14 @@ const Contact = () => {
       </div>
       <div className="flex flex-col pt-20 gap-5 flex-grow justify-center  w-full items-center z-10">
         <h2
+          ref={contactRef}
           id="contact-heading"
-          className="font-black text-xl sm:text-2xl md:text-3xl"
+          className={classNames(
+            "font-black text-xl sm:text-2xl md:text-3xl opacity-0",
+            {
+              "fade-in": contactVisible,
+            }
+          )}
         >
           <span className="dark:text-darkAccent text-lightAccent">
             {t("contactTitleOne")}

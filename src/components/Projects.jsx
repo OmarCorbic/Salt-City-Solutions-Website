@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import TiltCard from "./TiltCard";
 import Modal from "./Modal";
 import SingleProject from "./SingleProject";
 import LakeSvg from "./LakeSvg";
@@ -7,12 +6,23 @@ import { afarmImages } from "../assets/projectImages";
 import { tuzlaTaxiImages } from "../assets/projectImages";
 import { useTheme } from "../hooks/useTheme";
 import { useTranslation } from "react-i18next";
+import ProjectCard from "./ProjectCard";
+import { useInView } from "react-intersection-observer";
+import classNames from "classnames";
 
 const Projects = () => {
   const { t } = useTranslation("translation");
   const { darkMode } = useTheme();
   const [showSingleProject, setShowSingleProject] = useState(false);
   const [projectIndex, setProjectIndex] = useState(0);
+  const {
+    ref: titleRef,
+    inView: titleVisible,
+    titleEntry,
+  } = useInView({
+    triggerOnce: true,
+  });
+
   const handleProjectClick = (id) => {
     setProjectIndex(Number(id));
     setShowSingleProject(true);
@@ -55,8 +65,14 @@ const Projects = () => {
       </div>
       <div className="flex flex-col gap-5 w-full items-center z-10 px-5">
         <h2
+          ref={titleRef}
           id="projects-heading"
-          className="font-black text-xl sm:text-2xl md:text-3xl"
+          className={classNames(
+            "font-black text-xl sm:text-2xl md:text-3xl opacity-0",
+            {
+              "fade-in": titleVisible,
+            }
+          )}
         >
           {t("projectsTitleOne")}{" "}
           <span className="dark:text-darkAccent text-lightAccent">
@@ -73,22 +89,11 @@ const Projects = () => {
         )}
         {projects?.map((project, i) => {
           return (
-            <button
+            <ProjectCard
               key={i}
-              className="w-full sm:w-auto z-10"
-              id={project.id}
-              onClick={() => handleProjectClick(project.id)}
-            >
-              <TiltCard className="sm:w-[500px] flex-grow  h-[300px] sm:min-h-[300px]  rounded-sm border">
-                <div className="absolute top-0 left-0 w-full  h-full">
-                  <img
-                    className="object-cover w-full h-full"
-                    src={project.photos[0].src}
-                    alt="Project showcase photo"
-                  />
-                </div>
-              </TiltCard>
-            </button>
+              handleProjectClick={handleProjectClick}
+              project={project}
+            />
           );
         })}
       </div>
