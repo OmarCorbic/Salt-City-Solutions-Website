@@ -50,69 +50,72 @@ const Hero = () => {
           {t("heroBtnText")}
         </a>
       </div>
-      <div className="z-[2] absolute grid grid-rows-1 grid-cols-3 items-end -rotate-12 transform lg:bottom-10 lg:right-32 lg:h-72 lg:w-72 h-[60vw] w-60 sm:h-[60%] sm:w-72 bottom-0 right-0">
-        <div className="absolute bottom-1/2 right-1/3 hidden sm:block md:h-80 md:w-80 h-72 w-72 -z-10">
-          <div className="absolute z-10 top-14">
-            <img src={monitor} alt="" />
+      <div className="z-[2]  absolute flex flex-col h-[300px] sm:h-[60vw] md:h-[50vh] xl:h-[60vh] xl:w-[25vw]  -rotate-12 transform   bottom-[-10px] right-[10%] ">
+        <div className="absolute top-0 left-0  hidden border-red-400 items-center md:flex justify-center  -translate-x-[40%]  -translate-y-[40%]   w-full">
+          <div className="absolute w-[90%]  z-10 ">
+            <img src={monitor} alt="Display" />
           </div>
-          <div className="absolute">
-            <img src={moon} alt="" />
+          <div className=" border-green-500 w-full ">
+            <img className="w-full" src={moon} alt="Moon" />
           </div>
-          <div className="absolute bottom-[-50px] dark:translate-y-60 transition duration-150 left-[50px] w-[500px] -rotate-2">
+        </div>
+
+        <div className="relative flex-grow grid grid-rows-1 grid-cols-3 items-end text-[8px] sm:text-xs xl:text-base 2xl:text-xl ">
+          <div className="absolute top-0 left-0  items-start justify-center mt-10  -translate-x-[15%] w-[180%]  h-full dark:translate-y-[600px] transition duration-150 hidden sm:flex">
             <img
-              className="object-contain object-center h-full w-full"
+              className="absolute object-contain object-center w-full"
               src={cloud}
-              alt=""
+              alt="Cloud"
             />
           </div>
-        </div>
-        <div
-          style={{ animationDelay: "0.4s" }}
-          className="absolute w-1/3 -right-20 bottom-10 scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-700 dark:to-sky-950 h-2/4 "
-        ></div>
-        <div
-          style={{ animationDelay: "0.1s" }}
-          className="absolute w-1/3 -left-20 -bottom-10 scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-800 dark:to-sky-950 h-2/4 "
-        ></div>
-        <div className="scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-2/4 w-full">
-          <div className="flex flex-col items-center -translate-y-5 ">
-            <div>
-              <img src={handshake} alt="" />
+          <div
+            style={{ animationDelay: "0.4s" }}
+            className="absolute w-1/3 -left-1/3 bottom-0 scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-700 dark:to-sky-950 h-1/3 "
+          ></div>
+          <div
+            style={{ animationDelay: "0.4s" }}
+            className="absolute w-1/3 -right-1/3 bottom-0 scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-700 dark:to-sky-950 h-1/2"
+          ></div>
+          <div className="scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-2/4 w-full">
+            <div className="flex flex-col items-center h-1/6 -translate-y-5 ">
+              <div>
+                <img src={handshake} alt="" />
+              </div>
+              <p className="text-center w-full p-2 border-2 rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
+                Reliable
+              </p>
             </div>
-            <p className="text-center w-full p-2 border-2  rounded-sm m-3 text-[8px] bg-darkAccent dark:bg-transparent sm:text-xs">
-              Reliable
-            </p>
           </div>
-        </div>
-        <div
-          style={{ animationDelay: "0.2s" }}
-          className=" scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-3/4 w-full"
-        >
-          <div className="flex flex-col items-center -translate-y-5 ">
-            <div>
-              <img src={dollar} alt="" />
+          <div
+            style={{ animationDelay: "0.2s" }}
+            className=" scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-3/4 w-full"
+          >
+            <div className="flex flex-col items-center -translate-y-5 ">
+              <div>
+                <img src={dollar} alt="" />
+              </div>
+              <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
+                Affordable
+              </p>
             </div>
-            <p className="text-center w-full p-2 border-2  rounded-sm m-3 text-[8px] bg-darkAccent dark:bg-transparent sm:text-xs">
-              Affordable
-            </p>
           </div>
-        </div>
-        <div
-          style={{ animationDelay: "0.5s" }}
-          className="scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-full w-full"
-        >
-          <div className="flex flex-col items-center -translate-y-5 ">
-            <div>
-              <img src={clock} alt="" />
+          <div
+            style={{ animationDelay: "0.5s" }}
+            className="scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-full w-full"
+          >
+            <div className="flex flex-col items-center -translate-y-5 ">
+              <div>
+                <img src={clock} alt="" />
+              </div>
+              <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
+                Fast
+              </p>
             </div>
-            <p className="text-center w-full p-2 border-2  rounded-sm m-3 text-[8px] bg-darkAccent dark:bg-transparent sm:text-xs">
-              Fast
-            </p>
           </div>
         </div>
       </div>
       <div className="absolute left-0 bottom-0 h-1/6 w-1/6 bg-[#0075FF] blur-3xl"></div>
-      <div className="absolute bottom-[-1px] left-0 w-full z-10 ">
+      <div className="absolute bottom-0 left-0 translate-y-1 w-full z-10 ">
         <FrameSvg fill={darkMode ? "#01000d" : "#DCF2F1"} />
       </div>
     </section>
