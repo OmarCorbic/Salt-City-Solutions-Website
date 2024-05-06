@@ -7,7 +7,7 @@ const SingleProject = ({ project }) => {
   const { t } = useTranslation("translation");
 
   return (
-    <div className="flex  gap-5 h-full flex-col md:flex-row p-5 ">
+    <div className="flex gap-5 h-full flex-col md:flex-row p-5 max-w-[90rem]">
       <div className="flex flex-col w-full md:w-1/2  gap-5">
         <div className="w-full h-52 sm:h-72 md:h-96 flex-grow rounded-sm overflow-hidden">
           <Gallery photos={project?.photos} />

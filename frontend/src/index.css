@@ -69,6 +69,19 @@
   }
 }
 
+@keyframes slideInFromUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  animation: slideInFromUp 0.9s forwards;
+}
+
 .fade-in {
   opacity: 1;
   transition: all 1s;

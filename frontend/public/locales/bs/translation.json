@@ -1,6 +1,6 @@
 {
   "navItemOne": "O nama",
-  "navItemTwo": "Cjenovnik",
+  "navItemTwo": "Paketi",
   "navItemThree": "Projekti",
   "navItemFour": "Kontakt",
 
@@ -23,8 +23,8 @@
 
   "pricingContactBtnText": "Kontakt",
 
-  "pricingTitleOne": "NAŠ",
-  "pricingTitleTwo": "CJENOVNIK",
+  "pricingTitleOne": "NAŠI",
+  "pricingTitleTwo": "PAKETI",
   "pricingNote": "NAPOMENA: Svaka dodatna funkcija, stranica ili proizvod se dodatno naplaćuju.",
   "pricingBtnText": "Kontakt",
 
@@ -94,6 +94,7 @@
   "messageError": "Poruka je obavezna",
 
   "contactMsgSuccess": "Poruka uspješno poslana!",
+  "contactFail": "Došlo je do problema prilikom slanja vaše poruke. Molimo pokušajte ponovo ili nas kontaktirajte direktno na info@saltcitysystems.com",
 
   "singleProjectBtnText": "Pogledaj",
   "singleProjectCloseBtnText": "Zatvori",

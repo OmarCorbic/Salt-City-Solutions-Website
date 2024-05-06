@@ -32,12 +32,13 @@ const Translation = ({ setOpenTranslations }) => {
           className={classNames(
             "flex space-x-2 hover:bg-gray-200 pl-3 py-2 rounded-xl w-full",
             {
-              "text-blue-600": currentLanguage === "bs",
+              "border-2 duration-300 border-cyan-200 font-bold":
+                currentLanguage === "bs",
             }
           )}
         >
           <span>{getUnicodeFlagIcon("BA")}</span>
-          <span>BiH</span>
+          <span>BS</span>
         </button>
 
         <button
@@ -47,7 +48,7 @@ const Translation = ({ setOpenTranslations }) => {
           className={classNames(
             "flex space-x-2 hover:bg-gray-200 py-2 rounded-xl pl-3 w-full",
             {
-              "text-blue-600": currentLanguage === "en",
+              "border-2 border-cyan-200 font-bold": currentLanguage === "en",
             }
           )}
         >

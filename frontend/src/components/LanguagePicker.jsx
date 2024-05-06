@@ -20,7 +20,7 @@ const LanguagePicker = ({ setShowLinks }) => {
         {i18n.language === "bs" ? (
           <>
             <span>{getUnicodeFlagIcon("BA")}</span>
-            <span className="text-white">BiH</span>
+            <span className="text-white">BS</span>
           </>
         ) : (
           <>

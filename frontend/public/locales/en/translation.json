@@ -1,6 +1,6 @@
 {
   "navItemOne": "About us",
-  "navItemTwo": "Pricing",
+  "navItemTwo": "Packages",
   "navItemThree": "Projects",
   "navItemFour": "Contact",
 
@@ -24,7 +24,7 @@
   "pricingContactBtnText": "Contact us",
 
   "pricingTitleOne": "OUR",
-  "pricingTitleTwo": "PRICING PLAN",
+  "pricingTitleTwo": "PACKAGES",
   "pricingNote": "NOTE: Any additional feature, page and product is charged more",
   "pricingBtnText": "Contact",
 
@@ -94,6 +94,7 @@
   "messageError": "Message is required",
 
   "contactMsgSuccess": "Message sent successfully!",
+  "contactFail": "There was an issue sending your message. Please try again or contact us directly at info@saltcitysystems.com",
 
   "singleProjectBtnText": "View Live",
   "singleProjectCloseBtnText": "Close",

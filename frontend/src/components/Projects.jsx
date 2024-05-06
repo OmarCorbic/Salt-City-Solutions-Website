@@ -38,7 +38,7 @@ const Projects = () => {
       ],
       title: "A-FARM",
       description: t("afarmText"),
-      technologies: ["NextJS", "tailwind"],
+      technologies: ["nextjs", "tailwind", "html", "css"],
       liveLink: "https://afarm-biljoteka.com/",
     },
     {
@@ -50,7 +50,7 @@ const Projects = () => {
       ],
       title: "Tuzla Taxi",
       description: t("tuzlaTaxiText"),
-      technologies: ["tailwind", "react", "html", "css"],
+      technologies: ["react", "tailwind", "html", "css"],
       liveLink: "https://tuzlataxi.com/",
     },
   ];
@@ -83,7 +83,7 @@ const Projects = () => {
         </h2>
         <p className=" w-full max-w-[600px] px-5">{t("projectsText")}</p>
       </div>
-      <div className="w-full justify-center  flex flex-wrap gap-5 ">
+      <div className="w-full justify-center flex flex-wrap gap-5 ">
         {showSingleProject && (
           <Modal onClose={() => setShowSingleProject(false)}>
             <SingleProject project={projects[projectIndex]} />

@@ -3,11 +3,12 @@ import { BiMessage } from "react-icons/bi";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { GrContactInfo } from "react-icons/gr";
 import { useTranslation } from "react-i18next";
-import emailjs from "@emailjs/browser";
 import FrameSvg from "./FrameSvg";
 import { useTheme } from "../hooks/useTheme";
 import { useInView } from "react-intersection-observer";
 import classNames from "classnames";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const { t } = useTranslation("translation");
@@ -39,7 +40,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const { firstName, lastName, email, message } = formData;
 
@@ -61,28 +62,39 @@ const Contact = () => {
       setFormErrors(() => ({ ...errors }));
       return;
     }
-    emailjs
-      .send(
-        "service_q5suqyb",
-        "template_n6wwlze",
+
+    try {
+      axios.defaults.timeout = 5000;
+
+      const response = await axios.post(
+        `${import.meta.env.VITE_BACKEND_URL}/api/contact/sendMail`,
         {
-          from_email: formData.email,
-          from_name: formData.name,
-          message: formData.message,
-        },
-        { publicKey: "41j9gbSKyLr598-mT" }
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setSuccess(true);
-          setTimeout(() => setSuccess(false), 5000);
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          setSuccess(false);
+          firstName,
+          lastName,
+          email,
+          message,
         }
       );
+
+      if (response.status === 200) {
+        setSuccess(true);
+        toast.success(t("contactMsgSuccess"), {
+          position: "top-right",
+        });
+      }
+    } catch (error) {
+      setSuccess(false);
+      toast(t("contactFail"), {
+        position: "top-right",
+        closeButton: true,
+        closeOnClick: false,
+        draggable: false,
+        progressStyle: {
+          background: "red",
+        },
+      });
+    }
+
     setFormErrors({ firstName: "", lastName: "", email: "", message: "" });
     setFormData({ firstName: "", lastName: "", email: "", message: "" });
   };
