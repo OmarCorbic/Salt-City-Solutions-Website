@@ -37,7 +37,7 @@ const Navbar = () => {
       id="navbar"
       className="absolute text-white top-0 left-0 w-full flex flex-row items-center justify-between py-8 px-[10%] z-[9999]"
     >
-      <div className="w-24 sm:w-32">
+      <div className="w-24 sm:w-32 lg:w-[10vw]">
         <img className="hidden dark:block" src={logo} alt="logo" />
         <img className=" dark:hidden" src={logoLight} alt="logo" />
       </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
               showLinks
                 ? "h-auto px-4 py-2 rounded-md animate-grow origin-top"
                 : "h-0"
-            }  gap-2 absolute items-center text-base bg-[#020014] overflow-hidden top-[70%] right-0 sm:static flex flex-col sm:flex-row sm:bg-transparent sm:h-auto md:gap-5`}
+            }  gap-2 absolute items-center text-base bg-[#020014] overflow-hidden top-[70%] right-0 sm:static flex flex-col sm:flex-row sm:bg-transparent sm:h-auto md:gap-5 xl:text-lg 2xl:text-xl`}
           >
             <li>
               <Link to="about" text={t("navItemOne")} />
