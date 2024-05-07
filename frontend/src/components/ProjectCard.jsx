@@ -21,7 +21,7 @@ const ProjectCard = ({ project, handleProjectClick }) => {
       id={project.id}
       onClick={() => handleProjectClick(project.id)}
     >
-      <TiltCard className="btn sm:w-[500px] flex-grow h-[300px] sm:min-h-[300px] rounded-md border">
+      <TiltCard className="btn w-full sm:w-[500px] flex-grow h-[300px] sm:min-h-[300px] rounded-md border">
         <div className="absolute top-0 left-0 w-full h-full p-3">
           <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 group-hover:bg-opacity-20 duration-300"></div>
           
