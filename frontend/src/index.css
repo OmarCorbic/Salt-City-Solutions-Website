@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   line-height: 1.5;
   box-sizing: border-box;
-
+  font-family: "Ubuntu Sans","Work Sans", "Montserrat", "Inter", sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   scroll-behavior: smooth;

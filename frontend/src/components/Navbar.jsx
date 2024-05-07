@@ -52,7 +52,7 @@ const Navbar = () => {
               showLinks
                 ? "h-auto px-4 py-2 rounded-md animate-grow origin-top"
                 : "h-0"
-            }  gap-2 absolute items-center text-base bg-[#020014] overflow-hidden top-[70%] right-0 sm:static flex flex-col sm:flex-row sm:bg-transparent sm:h-auto md:gap-5 xl:text-lg 2xl:text-xl`}
+            }  gap-2 absolute items-center text-base bg-[#020014] overflow-hidden top-[70%] right-0 sm:static flex flex-col sm:flex-row sm:bg-transparent sm:h-auto md:gap-5 xl:text-lg 2xl:text-lg`}
           >
             <li>
               <Link to="about" text={t("navItemOne")} />

@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative text-white h-screen bg-gradient-to-br dark:from-[#000218] dark:to-sky-950 from-sky-600 to-sky-300 overflow-hidden"
+      className="relative text-white h-screen bg-gradient-to-tr dark:bg-gradient-to-br dark:from-[#000218] dark:to-sky-950 from-sky-400 to-sky-800 overflow-hidden"
     >
       <StarField />
       <div className=" pl-[8%] py-5 md:ml-[5%] lg:ml-20 absolute top-[20%] sm:top-[20%] flex flex-col z-[11] gap-5 sm:max-w-[45%]">
@@ -40,7 +40,7 @@ const Hero = () => {
         >
           {t("heroTitle")}
         </h1>
-        <p className="text-xs md:text-lg font-normal max-w-[60%] 2xl:text-2xl sm:max-w-full">
+        <p className="text-xs md:text-lg font-normal max-w-[70%] 2xl:text-xl ">
           {t("heroText")}
         </p>
         <div className="flex items-center justify-start">
