@@ -82,10 +82,10 @@ const Hero = () => {
                 <img src={handshake} alt="" />
               </div>
               <p className="text-center w-full p-2 border-2 rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
-                Reliable
+                {t("heroRectangleTextOne")}
               </p>
             </div>
-          </div>
+          </div>  
           <div
             style={{ animationDelay: "0.2s" }}
             className=" scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-3/4 w-full"
@@ -95,7 +95,7 @@ const Hero = () => {
                 <img src={dollar} alt="" />
               </div>
               <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
-                Affordable
+              {t("heroRectangleTextTwo")}
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ const Hero = () => {
                 <img src={clock} alt="" />
               </div>
               <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
-                Fast
+              {t("heroRectangleTextThree")}
               </p>
             </div>
           </div>
