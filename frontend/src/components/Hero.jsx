@@ -47,7 +47,7 @@ const Hero = () => {
 
         <a
           href="#contact"
-          className="dark:animate-flicker flex items-center justify-center py-3 px-6 bg-lightAccent dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white  font-bold xl:text-xl 2xl:text-2xl 2xl:px-10 2xl:py-5 "
+          className="dark:animate-flicker flex items-center justify-center py-3 px-6 bg-black dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white  font-bold xl:text-xl 2xl:text-2xl 2xl:px-10 2xl:py-5 "
         >
           {t("heroBtnText")}
         </a>
