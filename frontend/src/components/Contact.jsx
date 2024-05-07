@@ -104,7 +104,7 @@ const Contact = () => {
       id="contact"
       role="region"
       aria-labelledby="contact-heading"
-      className="relative min-h-screen flex flex-col px-[8%] justify-center overflow-hidden  gap-14 text-sm lg:text-base  text-center bg-gradient-to-bl from-sky-300 to-sky-600 text-white dark:from-[#000218] dark:to-sky-950"
+      className="relative min-h-screen flex flex-col px-[8%] justify-center overflow-hidden  gap-14 text-sm lg:text-base 2xl:text-lg  text-center bg-gradient-to-bl from-sky-300 to-sky-600 text-white dark:from-[#000218] dark:to-sky-950"
     >
       <div className="absolute top-[-1px] transform rotate-180  w-full z-0 left-0   ">
         <FrameSvg fill={darkMode ? "#01000d" : "#DCF2F1"} />
@@ -114,7 +114,7 @@ const Contact = () => {
           ref={contactRef}
           id="contact-heading"
           className={classNames(
-            "font-black text-xl sm:text-2xl md:text-3xl opacity-0",
+            "font-black text-xl sm:text-2xl md:text-3xl opacity-0 2xl:text-5xl",
             {
               "fade-in": contactVisible,
             }

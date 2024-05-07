@@ -47,7 +47,7 @@ const Pricing = () => {
       id="pricing"
       role="region"
       aria-labelledby="pricing-heading"
-      className="relative min-h-screen  flex flex-col justify-center items-center gap-14 text-sm lg:text-base  text-center"
+      className="relative min-h-screen  flex flex-col justify-center items-center gap-14 text-sm lg:text-base 2xl:text-lg  text-center"
     >
       <div className="absolute z-0 w-full scale-[2] sm:scale-100  flex items-center justify-center rotate-90 sm:rotate-180">
         <LakeSvg lake={2} fill={darkMode ? "#030017" : "#ade8f4"} />
@@ -57,7 +57,7 @@ const Pricing = () => {
           ref={pricingTitleRef}
           id="pricing-heading"
           className={classNames(
-            "font-black text-xl sm:text-2xl md:text-3xl opacity-0",
+            "font-black text-xl sm:text-2xl md:text-3xl opacity-0 2xl:text-5xl",
             {
               "fade-in": pricingVisible,
             }
@@ -89,9 +89,9 @@ const Pricing = () => {
           <div className="h-1/2 flex flex-col  gap-3">
             <h3
               id="standard-package-heading"
-              className="text-xl font-extrabold"
+              className="text-xl 2xl:text-2xl font-extrabold"
             >
-              <span className="dark:text-darkAccent text-lightAccent">
+              <span className="dark:text-darkAccent text-lightAccent ">
                 {t("pricingCardOneTitleOne")}
               </span>{" "}
               {t("pricingCardOneTitleTwo")}
@@ -102,7 +102,7 @@ const Pricing = () => {
               <p className="text-xs">{t("pricingCardOnePriceSubtext")}</p>
             </div> */}
           </div>
-          <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
+          <div className="h-1/2 font-bold gap-3 text-xs 2xl:text-base w-full grid grid-rows-3 grid-cols-2 text-left">
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
@@ -168,7 +168,7 @@ const Pricing = () => {
           <div className="h-1/2 flex flex-col  gap-3">
             <h3
               id="ecommerce-package-heading"
-              className="text-xl font-extrabold"
+              className="text-xl font-extrabold 2xl:text-2xl"
             >
               <span className="dark:text-darkAccent text-lightAccent">
                 {t("pricingCardTwoTitleOne")}
@@ -191,7 +191,7 @@ const Pricing = () => {
               <p className="text-xs">{t("pricingCardTwoSubtext")} </p>
             </div> */}
           </div>
-          <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
+          <div className="h-1/2 font-bold gap-3 text-xs 2xl:text-base w-full grid grid-rows-3 grid-cols-2 text-left">
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />
@@ -245,7 +245,7 @@ const Pricing = () => {
           <div className="h-1/2 flex flex-col gap-3">
             <h3
               id="branding-package-heading"
-              className="text-xl font-extrabold"
+              className="text-xl font-extrabold 2xl:text-2xl"
             >
               <span className="dark:text-darkAccent text-lightAccent">
                 {t("pricingCardThreeTitleOne")}
@@ -260,7 +260,7 @@ const Pricing = () => {
               </p>
             </div> */}
           </div>
-          <div className="h-1/2 font-bold gap-3 text-xs w-full grid grid-rows-3 grid-cols-2 text-left">
+          <div className="h-1/2 font-bold gap-3 text-xs 2xl:text-base w-full grid grid-rows-3 grid-cols-2 text-left">
             <div className="flex flex-row items-center gap-2">
               <div className="text-2xl dark:text-darkAccent text-lightAccent">
                 <TfiCheckBox />

@@ -60,7 +60,7 @@ const Projects = () => {
       id="projects"
       role="region"
       aria-labelledby="projects-heading"
-      className="relative min-h-screen flex flex-col justify-center  items-center gap-14 text-sm lg:text-base  text-center"
+      className="relative min-h-screen flex flex-col justify-center  items-center gap-14 text-sm lg:text-base 2xl:text-lg text-center"
     >
       <div className="absolute z-0 w-full scale-[2] sm:scale-100  flex items-center justify-center rotate-90 sm:rotate-180">
         <LakeSvg lake={3} fill={darkMode ? "#030017" : "#ade8f4"} />
@@ -70,7 +70,7 @@ const Projects = () => {
           ref={titleRef}
           id="projects-heading"
           className={classNames(
-            "font-black text-xl sm:text-2xl md:text-3xl opacity-0",
+            "font-black text-xl sm:text-2xl md:text-3xl opacity-0 2xl:text-5xl",
             {
               "fade-in": titleVisible,
             }

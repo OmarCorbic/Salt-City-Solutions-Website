@@ -49,7 +49,7 @@ const About = () => {
       id="about"
       role="region"
       aria-labelledby="about-heading"
-      className="relative min-h-screen flex flex-col justify-center items-center gap-14 text-sm lg:text-base  text-center"
+      className="relative min-h-screen flex flex-col justify-center items-center gap-14 text-sm lg:text-base 2xl:text-lg  text-center"
     >
       <div className="absolute z-0 w-full scale-[2] sm:scale-100  flex items-center justify-center rotate-90 sm:rotate-180">
         <LakeSvg lake={1} fill={darkMode ? "#030017" : "#ade8f4"} />
@@ -58,7 +58,7 @@ const About = () => {
         <h2
           id="about-heading"
           className={classNames(
-            "font-black text-xl opacity-0 sm:text-2xl md:text-3xl",
+            "font-black text-xl opacity-0 sm:text-2xl md:text-3xl 2xl:text-5xl",
             {
               "fade-in": aboutVisible,
             }
@@ -84,7 +84,7 @@ const About = () => {
           >
             <img src={responsive} alt="devices" />
           </div>
-          <h3 className="dark:text-darkAccent text-lightAccent font-bold text-lg">
+          <h3 className="dark:text-darkAccent text-lightAccent font-bold text-lg 2xl:text-2xl">
             {t("aboutCardOneTitle")}
           </h3>
           <p className="px-5 md:max-w-80">{t("aboutCardOneText")}</p>
@@ -101,7 +101,7 @@ const About = () => {
           >
             <img src={seo} alt="seo optimization" />
           </div>
-          <h3 className="dark:text-darkAccent text-lightAccent font-bold text-lg">
+          <h3 className="dark:text-darkAccent text-lightAccent font-bold text-lg 2xl:text-2xl">
             {t("aboutCardTwoTitle")}
           </h3>
           <p className="px-5 max-w-96">{t("aboutCardTwoText")}</p>
@@ -118,7 +118,7 @@ const About = () => {
           >
             <img src={api} alt="api development" />
           </div>
-          <h3 className="dark:text-darkAccent text-lightAccent font-bold text-lg">
+          <h3 className="dark:text-darkAccent text-lightAccent font-bold text-lg 2xl:text-2xl">
             {t("aboutCardThreeTitle")}
           </h3>
           <p className="px-5 max-w-96">{t("aboutCardThreeText")}</p>
