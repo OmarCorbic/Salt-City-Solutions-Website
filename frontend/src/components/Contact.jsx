@@ -150,7 +150,7 @@ const Contact = () => {
                 id="firstName"
               />
               {formErrors.firstName && (
-                <div className="dark:text-rose-500 text-yellow-400 font-bold text-sm  py-1">
+                <div className="dark:text-rose-500 text-lightAccent font-bold text-sm  py-1">
                   {formErrors.firstName}
                 </div>
               )}
@@ -175,7 +175,7 @@ const Contact = () => {
                 id="lastName"
               />
               {formErrors.lastName && (
-                <div className="dark:text-rose-500 text-yellow-400 font-bold text-sm  py-1">
+                <div className="dark:text-rose-500 text-lightAccent font-bold text-sm  py-1">
                   {formErrors.lastName}
                 </div>
               )}
@@ -201,7 +201,7 @@ const Contact = () => {
               id="email"
             />
             {formErrors.email && (
-              <div className="dark:text-rose-500 text-yellow-400 font-bold text-sm  py-1">
+              <div className="dark:text-rose-500 text-lightAccent font-bold text-sm  py-1">
                 {formErrors.email}
               </div>
             )}
@@ -226,7 +226,7 @@ const Contact = () => {
               id="message"
             />
             {formErrors.message && (
-              <div className="dark:text-rose-500 text-yellow-400 font-bold text-sm  py-1">
+              <div className="dark:text-rose-500 text-lightAccent font-bold text-sm  py-1">
                 {formErrors.message}
               </div>
             )}
