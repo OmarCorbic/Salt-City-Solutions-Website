@@ -9,6 +9,8 @@ import { useTranslation } from "react-i18next";
 import ProjectCard from "./ProjectCard";
 import { useInView } from "react-intersection-observer";
 import classNames from "classnames";
+import afarmLogo from "../assets/projectImages/afarm-logo.png";
+import tuzlaTaxiLogo from "../assets/projectImages/tuzla-taxi-logo.png";
 
 const Projects = () => {
   const { t } = useTranslation("translation");
@@ -31,6 +33,7 @@ const Projects = () => {
   const projects = [
     {
       id: 0,
+      logo: {src: afarmLogo},
       photos: [
         ...afarmImages.map((src, i) => {
           return { src: src || "", alt: "AFARM image " + i };
@@ -43,6 +46,7 @@ const Projects = () => {
     },
     {
       id: 1,
+      logo: {src: tuzlaTaxiLogo},
       photos: [
         ...tuzlaTaxiImages.map((src, i) => {
           return { src: src || "", alt: "Tuzla Taxi image " + i };
