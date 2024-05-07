@@ -32,7 +32,7 @@ const Hero = () => {
       <div className=" pl-[8%] py-5 md:ml-[5%] lg:ml-20 absolute top-[20%] sm:top-[20%] flex flex-col z-[11] gap-5 sm:max-w-[45%]">
         <h1
           className={classNames(
-            "text-2xl md:text-3xl lg:text-5xl xl:text-[3.7rem] font-black",
+            "text-3xl md:text-4xl lg:text-5xl xl:text-[3.7rem] 2xl:text-7xl font-black",
             {
               "animate-right": heroTextVisible,
             }
@@ -40,15 +40,18 @@ const Hero = () => {
         >
           {t("heroTitle")}
         </h1>
-        <p className="text-xs md:text-lg font-normal max-w-[60%] sm:max-w-full">
+        <p className="text-xs md:text-lg font-normal max-w-[60%] 2xl:text-2xl sm:max-w-full">
           {t("heroText")}
         </p>
+        <div className="flex items-center justify-start">
+
         <a
           href="#contact"
-          className="dark:animate-flicker flex items-center justify-center py-3 px-5 bg-lightAccent dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white w-32 font-bold"
+          className="dark:animate-flicker flex items-center justify-center py-3 px-6 bg-lightAccent dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white  font-bold xl:text-xl 2xl:text-2xl 2xl:px-10 2xl:py-5 "
         >
           {t("heroBtnText")}
         </a>
+        </div>
       </div>
       <div className="z-[2]  absolute flex flex-col h-[300px] sm:h-[60vw] md:h-[50vh] xl:h-[60vh] xl:w-[25vw]  -rotate-12 transform   bottom-[-10px] right-[10%] ">
         <div className="absolute top-0 left-0  hidden border-red-400 items-center md:flex justify-center  -translate-x-[40%]  -translate-y-[40%]   w-full">
