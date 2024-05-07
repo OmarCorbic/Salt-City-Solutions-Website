@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative text-white h-screen bg-gradient-to-tr dark:bg-gradient-to-br dark:from-[#000218] dark:to-sky-950 from-sky-400 to-sky-800 overflow-hidden"
+      className="relative text-white min-h-[90vh] md:min-h-screen bg-gradient-to-tr dark:bg-gradient-to-br dark:from-[#000218] dark:to-sky-950 from-sky-400 to-sky-800 overflow-hidden"
     >
       <StarField />
       <div className=" pl-[8%] py-5 md:ml-[5%] lg:ml-20 absolute top-[20%] sm:top-[20%] flex flex-col z-[11] gap-5 sm:max-w-[45%]">
