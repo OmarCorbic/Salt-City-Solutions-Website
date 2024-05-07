@@ -1,0 +1,17 @@
+version: "3"
+services:
+  portfolio-web:
+    build:
+      context: ./frontend/
+      dockerfile: ./Dockerfile
+    ports:
+      - 9001:80
+    restart: always
+  porrfolio-backend:
+    build:
+      context: ./backend/
+      dockerfile: ./Dockerfile
+    ports:
+      - 9002:9998
+    environment:
+      - NODE_ENV=production
