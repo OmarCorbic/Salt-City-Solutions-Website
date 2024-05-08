@@ -3,9 +3,10 @@ import FrameSvg from "./FrameSvg";
 import moon from "../assets/moon.png";
 import StarField from "./StarField";
 import monitor from "../assets/hero-monitor.png";
-import dollar from "../assets/dollar.png";
-import handshake from "../assets/handshake.png";
-import clock from "../assets/clock.png";
+import { PiCurrencyDollarFill } from "react-icons/pi";
+import { FaHandshakeSimple } from "react-icons/fa6";
+import { PiClockCountdownFill } from "react-icons/pi";
+
 import cloud from "../assets/cloud.png";
 import { useTheme } from "../hooks/useTheme";
 import { useTranslation } from "react-i18next";
@@ -47,7 +48,7 @@ const Hero = () => {
 
         <a
           href="#contact"
-          className="dark:animate-flicker flex items-center justify-center py-3 px-6 bg-black dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white  font-bold xl:text-xl 2xl:text-2xl 2xl:px-10 2xl:py-5 "
+          className="dark:animate-flicker flex items-center justify-center py-3 px-6 bg-violet-600 dark:bg-[#aa2e5d] rounded-full hover:scale-105 btn border-2 boder-white  font-bold xl:text-xl 2xl:text-2xl 2xl:px-10 2xl:py-5 "
         >
           {t("heroBtnText")}
         </a>
@@ -59,13 +60,14 @@ const Hero = () => {
             <img src={monitor} alt="Display" />
           </div>
           <div className=" border-green-500 w-full ">
-            <img className="w-full" src={moon} alt="Moon" />
+            <img fetchpriority="high" className="w-full" src={moon} alt="Moon" />
           </div>
         </div>
 
         <div className="relative flex-grow grid grid-rows-1 grid-cols-3 items-end text-[8px] sm:text-xs xl:text-base 2xl:text-xl ">
           <div className="absolute top-0 left-0  items-start justify-center mt-10  -translate-x-[15%] w-[180%]  h-full dark:translate-y-[600px] transition duration-150 hidden sm:flex">
             <img
+              fetchpriority="high"
               className="absolute object-contain object-center w-full"
               src={cloud}
               alt="Cloud"
@@ -81,10 +83,10 @@ const Hero = () => {
           ></div>
           <div className="scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-2/4 w-full">
             <div className="flex flex-col items-center h-1/6 -translate-y-5 ">
-              <div>
-                <img src={handshake} alt="" />
+              <div className="text-cyan-600 border rounded-full p-1 bg-blue-200 border-slate-500">
+                <FaHandshakeSimple size={50}/>
               </div>
-              <p className="text-center w-full p-2 border-2 rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
+              <p className="text-center w-full p-2 border-2 rounded-sm m-3 bg-cyan-600">
                 {t("heroRectangleTextOne")}
               </p>
             </div>
@@ -94,10 +96,10 @@ const Hero = () => {
             className=" scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-3/4 w-full"
           >
             <div className="flex flex-col items-center -translate-y-5 ">
-              <div>
-                <img src={dollar} alt="" />
+              <div className="text-cyan-600 border rounded-full p-1 bg-blue-200 border-slate-500">
+                <PiCurrencyDollarFill size={50}/>
               </div>
-              <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
+              <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-cyan-600">
               {t("heroRectangleTextTwo")}
               </p>
             </div>
@@ -107,10 +109,10 @@ const Hero = () => {
             className="scale-0 origin-bottom animate-grow bg-gradient-to-b rounded-sm px-2 from-slate-100 to-gray-700 dark:from-sky-400 dark:to-sky-950 h-full w-full"
           >
             <div className="flex flex-col items-center -translate-y-5 ">
-              <div>
-                <img src={clock} alt="" />
+              <div className="text-cyan-600 border rounded-full p-1 bg-blue-200 border-slate-500">
+                <PiClockCountdownFill size={50}/>
               </div>
-              <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-darkAccent dark:bg-transparent ">
+              <p className="text-center w-full p-2 border-2  rounded-sm m-3 bg-cyan-600">
               {t("heroRectangleTextThree")}
               </p>
             </div>
