@@ -4,8 +4,6 @@ const LakeSvg = ({ lake = 1, fill = "white" }) => {
   if (lake === 1 || lake === "1") {
     return (
       <svg
-        width="auto"
-        height="auto"
         viewBox="0 0 1200 519"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,8 +17,6 @@ const LakeSvg = ({ lake = 1, fill = "white" }) => {
   } else if (lake === 2 || lake === "2") {
     return (
       <svg
-        width="auto"
-        height="auto"
         viewBox="0 0 1200 525"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +30,6 @@ const LakeSvg = ({ lake = 1, fill = "white" }) => {
   } else if (lake === 3 || lake === "3") {
     return (
       <svg
-        width="auto"
-        height="auto"
         viewBox="0 0 1200 570"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
