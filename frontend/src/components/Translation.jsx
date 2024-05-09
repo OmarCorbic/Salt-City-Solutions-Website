@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 
 const Translation = ({ setOpenTranslations }) => {
-  const [t, i18n] = useTranslation("common");
+  const [t, i18n] = useTranslation("translation");
   const currentLanguage = i18n.language;
   const modalRef = useRef();
 
