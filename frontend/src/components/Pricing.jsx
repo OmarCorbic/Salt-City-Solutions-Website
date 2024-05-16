@@ -80,7 +80,7 @@ const Pricing = () => {
               "1px 1px 9px rgb(56 189 248), -1px -1px 9px rgb(56 189 248)",
           }}
           className={classNames(
-            "flex flex-col justify-around border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3  p-5 opacity-0",
+            "flex flex-col justify-around border-2 border-sky-300 bg-white bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3  p-5 opacity-0",
             {
               "first-item-fade-in": pricingCardVisible,
             }
@@ -159,7 +159,7 @@ const Pricing = () => {
               "1px 1px 9px rgb(56 189 248), -1px -1px 9px rgb(56 189 248)",
           }}
           className={classNames(
-            "flex flex-col border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3 p-5 opacity-0",
+            "flex flex-col border-2 border-sky-300 bg-white bg-opacity-20 dark:bg-opacity-0 m-5 lg:m-0 rounded-md gap-3 p-5 opacity-0",
             {
               "third-item-fade-in": secondPricingCardVisible,
             }
@@ -236,7 +236,7 @@ const Pricing = () => {
               "1px 1px 9px rgb(56 189 248), -1px -1px 9px rgb(56 189 248)",
           }}
           className={classNames(
-            "flex flex-col border-2 border-sky-300 bg-gray-400 bg-opacity-20 dark:bg-opacity-0  m-5 lg:m-0 rounded-md gap-3 p-5 opacity-0",
+            "flex flex-col border-2 border-sky-300 bg-white bg-opacity-20 dark:bg-opacity-0  m-5 lg:m-0 rounded-md gap-3 p-5 opacity-0",
             {
               "third-item-fade-in": thirdPricingCardVisible,
             }
